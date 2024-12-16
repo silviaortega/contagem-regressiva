@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "MinhaFonte";
+  src: url("MorrisRomanBlack.otf") format("otf"),
+    url("MorrisRomanBlackAlt.otf") format("otf"),
+    url("MorrisRomanBlackAlt.ttf") format("ttf"),
+    url("MorrisRomanBlack.ttf") format("truetype");
+}
+body {
+  background-image: url("natal.png"); /* Substitua pela sua imagem de fundo */
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "MinhaFonte", serif; /* Use uma fonte medieval */
+  color: #fff;
+  font-size: 2.2rem;
+}
+
+.countdown-container {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.countdown span {
+  font-size: 5rem;
+  animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;
+  }
+  100% {
+    text-shadow: none;
+  }
+}
